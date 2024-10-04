@@ -1,0 +1,654 @@
+
+{
+	"info": {
+		"_postman_id": "e567fdab-e469-4ae4-84d3-7df478551e29",
+		"name": "inventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30243433",
+		"_collection_link": "https://dark-meadow-856120.postman.co/workspace/Sprint~98b82da3-53d2-4139-a9c8-2b851c2b62c0/collection/30243433-e567fdab-e469-4ae4-84d3-7df478551e29?action=share&source=collection_link&creator=30243433"
+	},
+	"item": [
+		{
+			"name": "token-obtain",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI4MDExNTQ4LCJpYXQiOjE3MjgwMTEyNDgsImp0aSI6ImQzZWI0YmYzMzgxMDQwNGZiZDZkYzViM2E0MDk2YmMxIiwidXNlcl9pZCI6MX0.ZpZEc4HS0PXAaG5G-naJaF783j4S9-c8HYVP-JKiULk",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"sayali\",\r\n  \"password\": \"admin\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/items/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"items",
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "token-obtain",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI4MDExNTQ4LCJpYXQiOjE3MjgwMTEyNDgsImp0aSI6ImQzZWI0YmYzMzgxMDQwNGZiZDZkYzViM2E0MDk2YmMxIiwidXNlcl9pZCI6MX0.ZpZEc4HS0PXAaG5G-naJaF783j4S9-c8HYVP-JKiULk",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"sayali\",\r\n  \"password\": \"admin\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/items/api/token/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"items",
+								"api",
+								"token",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Oct 2024 03:23:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "483"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyODA5ODYyNywiaWF0IjoxNzI4MDEyMjI3LCJqdGkiOiI0MzNmY2UyNTRlMzM0OGM1YTFhMzllNmEyNDg2NDIyOCIsInVzZXJfaWQiOjF9.YTcmPI5MufIYlG1hBHgWrB2yZzv4H3Vw36u6KnUFL8Q\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI4MDE1ODI3LCJpYXQiOjE3MjgwMTIyMjcsImp0aSI6IjdlYzcyNDM3NGQyMDQxNjhhNmEzMTI4MmFiYTE2NTliIiwidXNlcl9pZCI6MX0.ADMnfGCd3btK3CzcleMV6sAYQBjR4rRaZ7GwcLw3cCc\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create-item",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI4MDEyMDY2LCJpYXQiOjE3MjgwMTE3NjYsImp0aSI6ImZjMTVlYTZlNmY5MTQ0NDY5ODE3MmY0Njc5NTZlY2YzIiwidXNlcl9pZCI6MX0.fYrHiLxlASo3KfTVvuTiSOOYw7OEVbgbiS6Vv5Xkr80",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"description\": \"A high-performance laptop for work and gaming.\",\r\n  \"quantity\": 15,\r\n  \"price\": 1200.99\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/items/items/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"items",
+						"items",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create-item",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI4MDEyMDY2LCJpYXQiOjE3MjgwMTE3NjYsImp0aSI6ImZjMTVlYTZlNmY5MTQ0NDY5ODE3MmY0Njc5NTZlY2YzIiwidXNlcl9pZCI6MX0.fYrHiLxlASo3KfTVvuTiSOOYw7OEVbgbiS6Vv5Xkr80",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"description\": \"A high-performance laptop for work and gaming.\",\r\n  \"quantity\": 15,\r\n  \"price\": 1200.99\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/items/items/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"items",
+								"items",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Oct 2024 03:20:14 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, POST"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "119"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"name\": \"Laptop\",\n    \"description\": \"A high-performance laptop for work and gaming.\",\n    \"quantity\": 15,\n    \"price\": \"1200.99\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get-item",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI4MDE1ODI3LCJpYXQiOjE3MjgwMTIyMjcsImp0aSI6IjdlYzcyNDM3NGQyMDQxNjhhNmEzMTI4MmFiYTE2NTliIiwidXNlcl9pZCI6MX0.ADMnfGCd3btK3CzcleMV6sAYQBjR4rRaZ7GwcLw3cCc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/items/items/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"items",
+						"items",
+						"2",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get-item",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI4MDE1ODI3LCJpYXQiOjE3MjgwMTIyMjcsImp0aSI6IjdlYzcyNDM3NGQyMDQxNjhhNmEzMTI4MmFiYTE2NTliIiwidXNlcl9pZCI6MX0.ADMnfGCd3btK3CzcleMV6sAYQBjR4rRaZ7GwcLw3cCc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/items/items/2/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"items",
+								"items",
+								"2",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Oct 2024 03:28:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "88"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"item2\",\n    \"description\": \"item2 description\",\n    \"quantity\": 2,\n    \"price\": \"2000.00\"\n}"
+				}
+			]
+		},
+		{
+			"name": "put-item",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI4MDE1ODI3LCJpYXQiOjE3MjgwMTIyMjcsImp0aSI6IjdlYzcyNDM3NGQyMDQxNjhhNmEzMTI4MmFiYTE2NTliIiwidXNlcl9pZCI6MX0.ADMnfGCd3btK3CzcleMV6sAYQBjR4rRaZ7GwcLw3cCc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Laptop12\",\r\n  \"description\": \"A high-performance laptop for work and gaming.\",\r\n  \"quantity\": 15,\r\n  \"price\": 1200.99\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/items/items/2/update/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"items",
+						"items",
+						"2",
+						"update",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update-item",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI4MDE1ODI3LCJpYXQiOjE3MjgwMTIyMjcsImp0aSI6IjdlYzcyNDM3NGQyMDQxNjhhNmEzMTI4MmFiYTE2NTliIiwidXNlcl9pZCI6MX0.ADMnfGCd3btK3CzcleMV6sAYQBjR4rRaZ7GwcLw3cCc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Laptop12\",\r\n  \"description\": \"A high-performance laptop for work and gaming.\",\r\n  \"quantity\": 15,\r\n  \"price\": 1200.99\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/items/items/2/update/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"items",
+								"items",
+								"2",
+								"update",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Oct 2024 03:36:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "PUT, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "121"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"Laptop12\",\n    \"description\": \"A high-performance laptop for work and gaming.\",\n    \"quantity\": 15,\n    \"price\": \"1200.99\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete-item",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI4MDE1ODI3LCJpYXQiOjE3MjgwMTIyMjcsImp0aSI6IjdlYzcyNDM3NGQyMDQxNjhhNmEzMTI4MmFiYTE2NTliIiwidXNlcl9pZCI6MX0.ADMnfGCd3btK3CzcleMV6sAYQBjR4rRaZ7GwcLw3cCc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/items/items/2/delete/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"items",
+						"items",
+						"2",
+						"delete",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete-item",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI4MDE1ODI3LCJpYXQiOjE3MjgwMTIyMjcsImp0aSI6IjdlYzcyNDM3NGQyMDQxNjhhNmEzMTI4MmFiYTE2NTliIiwidXNlcl9pZCI6MX0.ADMnfGCd3btK3CzcleMV6sAYQBjR4rRaZ7GwcLw3cCc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/items/items/2/delete/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"items",
+								"items",
+								"2",
+								"delete",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Oct 2024 03:37:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, DELETE"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Item deleted successfully\"\n}"
+				}
+			]
+		}
+	]
+}
